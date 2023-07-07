@@ -235,3 +235,33 @@ img {
 .content-nosotros p {
   margin-bottom: 1rem;
 }
+
+/***Modelos*/
+
+.model {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+@media (min-width: 768px) {
+  .model {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.content-model {
+  padding: 5rem;
+  background-color: var(--white);
+}
+
+.basic {
+  background-image: url("../img/modelo_basico.jpg");
+}
+.premier {
+  background-image: url("../img/modelo_premier.jpg");
+}
+.elite {
+  background-image: url("../img/modelo_elite.jpg");
+}
